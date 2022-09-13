@@ -13,6 +13,7 @@ from .xml_style import XMLDataset
 
 from .hrsc2016 import HRSC2016Dataset
 from .dota import DotaDataset
+from .autodidact import AutodidactDataset
 
 __all__ = [
     'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
@@ -20,4 +21,5 @@ __all__ = [
     'build_dataloader', 'ConcatDataset', 'RepeatDataset',
     'WIDERFaceDataset', 'DATASETS', 'build_dataset',
     'HRSC2016Dataset','DotaDataset','DeepScoresV2Dataset','DeepScoresV2Dataset_Hybrid',
+    'AutodidactDataset',
 ]
