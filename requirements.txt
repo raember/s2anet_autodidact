@@ -9,3 +9,5 @@ six
 pycocotools
 pillow==6.2.2
 shapely
+bs4
+lxml
