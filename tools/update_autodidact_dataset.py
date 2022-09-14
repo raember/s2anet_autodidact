@@ -30,7 +30,7 @@ def download_dataset(task_id: int, folder: Path) -> Tuple[Path, bool]:
     out = folder / f"{task_id}"
     done_flag = out / '.done'
     if done_flag.exists():
-        return out
+        return out, False
     zip_path = out.with_name(f"{task_id}.zip")
     if zip_path.exists():
         zip_path.unlink()
